@@ -1,0 +1,38 @@
+ul {
+  display : table;
+  width : 100%;
+  padding : 0;
+}
+ul, li {
+  height : 100%;
+}
+ul li { /* day column */
+  display : table-cell;
+  width : 14%;
+  position : relative;
+  border: lightgray solid thin;
+}
+ul li h2 { /* day label */
+  font-size:1em;
+  font-weight:100;
+  text-align: center;
+  margin: 0.4em 0 0 0;
+  padding-bottom: 0.2em;
+  border-bottom: lightgray solid thin;
+}
+body {
+  margin: 10px 40px
+}
+li ul {
+  display : block;
+  position : relative;
+  height : calc(100% - 1em - 0.4em - 0.2em - 2px);
+}
+li ul li { /* event */
+  padding:2px;
+  display: block;
+  position: absolute;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border: darkgray solid thin;
+}
